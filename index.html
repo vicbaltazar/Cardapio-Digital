@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VicFelas - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg class="bg-texture" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#noise)"/>
+  </svg>
+
+  <div class="deco deco-1"></div>
+  <div class="deco deco-2"></div>
+  <div class="deco deco-3"></div>
+
+  <div class="page">
+
+    <header>
+      <div class="brand">VicFelas</div>
+      <div class="menu-right">
+        <span class="tagline">reachmemarketing</span>
+        <div class="menu-title-row">
+          <svg class="face" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="30" cy="28" r="22" stroke="#1E140A" stroke-width="2.5"/>
+            <ellipse cx="38" cy="24" rx="4" ry="4.5" fill="#1E140A"/>
+            <circle cx="24" cy="22.5" r="1.5" fill="#F4EFE4"/>
+            <circle cx="40" cy="22.5" r="1.5" fill="#F4EFE4"/>
+            <path d="M20 36 Q30 46 40 36" stroke="#1E140A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="menu-word">MENU</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="ornament-divider" aria-hidden="true">
+      <span class="od-line"></span>
+      <svg class="od-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2 L14 8 L20 8 L15.5 11.5 L17.5 18 L12 14 L6.5 18 L8.5 11.5 L4 8 L10 8 Z" fill="#1E140A" opacity="0.25"/>
+      </svg>
+      <span class="od-line"></span>
+    </div>
+
+    <main class="items">
+
+      <!-- 01 · Soda Italiana -->
+      <article class="item item--soda" tabindex="0">
+        <div class="item-streak" aria-hidden="true"></div>
+        <div class="item-num" aria-hidden="true">01</div>
+
+        <div class="item-photo">
+          <div class="splat splat-soda"></div>
+          <div class="ring ring-soda"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <img src="images/soda.png" alt="Copo de soda italiana colorida com gelo" />
+        </div>
+
+        <div class="item-content">
+          <div class="badge-row">
+            <span class="badge badge-new">novo</span>
+          </div>
+          <div class="name-row">
+            <span class="name-doodle name-doodle-left" aria-hidden="true"></span>
+            <h2 class="item-name">Soda Italiana</h2>
+            <span class="name-doodle name-doodle-right" aria-hidden="true"></span>
+          </div>
+          <p class="item-desc">Água gaseificada com xarope aromatizado. Refrescante e cheio de sabor!</p>
+          <div class="flavors">
+            <span class="flavor" style="--fc:#4ade80">Menta</span>
+            <span class="flavor" style="--fc:#f472b6">Morango</span>
+            <span class="flavor" style="--fc:#fb923c">Maracujá</span>
+            <span class="flavor" style="--fc:#60a5fa">Mirtilo</span>
+          </div>
+          <div class="price-row">
+            <div class="starburst starburst-soda" aria-label="Preço: R$ 12,00">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M50 5 60 22 79 15 75 34 93 40 80 52 93 65 74 69 78 88 60 81 50 97 40 81 22 88 26 69 7 65 20 52 7 40 25 34 21 15 40 22Z"/>
+              </svg>
+              <div class="starburst-text">R$<br>12,00</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ornamento entre itens -->
+      <div class="item-sep" aria-hidden="true">
+        <span class="sep-dot"></span><span class="sep-dot"></span><span class="sep-dot"></span>
+      </div>
+
+      <!-- 02 · Misto Quente -->
+      <article class="item item--misto flip" tabindex="0">
+        <div class="item-streak item-streak--right" aria-hidden="true"></div>
+        <div class="item-num item-num-right" aria-hidden="true">02</div>
+
+        <div class="item-photo">
+          <div class="splat splat-misto"></div>
+          <div class="ring ring-misto"></div>
+          <div class="bubble bubble-3"></div>
+          <img src="images/misto.png" alt="Sanduíche misto quente com queijo derretido" />
+        </div>
+
+        <div class="item-content">
+          <div class="badge-row badge-row-right">
+            <span class="badge badge-classic">clássico</span>
+          </div>
+          <div class="name-row">
+            <span class="name-doodle name-doodle-left" aria-hidden="true"></span>
+            <h2 class="item-name">Misto Quente</h2>
+            <span class="name-doodle name-doodle-right" aria-hidden="true"></span>
+          </div>
+          <p class="item-desc">Queijo e presunto entre pão crocante e dourado. Clássico irresistível!</p>
+          <div class="flavors flavors-right">
+            <span class="flavor" style="--fc:#fbbf24">Queijo</span>
+            <span class="flavor" style="--fc:#f87171">Presunto</span>
+            <span class="flavor" style="--fc:#d6b899">Pão</span>
+          </div>
+          <div class="price-row price-row-right">
+            <div class="price-row price-row-right">
+            <div class="starburst">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M50 5 60 22 79 15 75 34 93 40 80 52 93 65 74 69 78 88 60 81 50 97 40 81 22 88 26 69 7 65 20 52 7 40 25 34 21 15 40 22Z"
+                  fill="#1E140A"
+                />
+              </svg>
+              <div class="starburst-text">R$<br>8,00</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ornamento entre itens -->
+      <div class="item-sep" aria-hidden="true">
+        <span class="sep-dot"></span><span class="sep-dot"></span><span class="sep-dot"></span>
+      </div>
+
+      <!-- 03 · Bolo de Cenoura -->
+      <article class="item item--bolo" tabindex="0">
+        <div class="item-streak" aria-hidden="true"></div>
+        <div class="item-num" aria-hidden="true">03</div>
+
+        <div class="item-photo">
+          <div class="splat splat-bolo"></div>
+          <div class="ring ring-bolo"></div>
+          <div class="bubble bubble-4"></div>
+          <img src="images/bolo.png" alt="Fatia de bolo de cenoura com cobertura de chocolate" />
+        </div>
+
+        <div class="item-content">
+          <div class="badge-row">
+            <span class="badge badge-sweet">doce</span>
+          </div>
+          <div class="name-row">
+            <span class="name-doodle name-doodle-left" aria-hidden="true"></span>
+            <h2 class="item-name">Bolo de Cenoura</h2>
+            <span class="name-doodle name-doodle-right" aria-hidden="true"></span>
+          </div>
+          <p class="item-desc">Fofinho por dentro com cobertura generosa de chocolate. Pura felicidade!</p>
+          <div class="flavors">
+            <span class="flavor" style="--fc:#fb923c">Cenoura</span>
+            <span class="flavor" style="--fc:#a78bfa">Chocolate</span>
+            <span class="flavor" style="--fc:#f9a8d4">Caseiro</span>
+          </div>
+          <div class="price-row">
+            <div class="starburst starburst-bolo" aria-label="Preço: R$ 7,00">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M50 5 60 22 79 15 75 34 93 40 80 52 93 65 74 69 78 88 60 81 50 97 40 81 22 88 26 69 7 65 20 52 7 40 25 34 21 15 40 22Z"/>
+              </svg>
+              <div class="starburst-text">R$<br>7,00</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <footer>
+      <div class="ornament-divider ornament-divider--footer" aria-hidden="true">
+        <span class="od-line"></span>
+        <svg class="od-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="3" fill="#1E140A" opacity="0.3"/>
+          <circle cx="4"  cy="12" r="2" fill="#1E140A" opacity="0.18"/>
+          <circle cx="20" cy="12" r="2" fill="#1E140A" opacity="0.18"/>
+        </svg>
+        <span class="od-line"></span>
+      </div>
+      <div class="footer-row">
+        <span>Cardápio VicFelas</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.item');
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+      { threshold: 0.15 }
+    );
+    items.forEach(el => io.observe(el));
+
+    items.forEach(item => {
+      const photo = item.querySelector('.item-photo');
+      item.addEventListener('mousemove', e => {
+        const r = item.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width  - 0.5) * 12;
+        const y = ((e.clientY - r.top)  / r.height - 0.5) * 12;
+        photo.style.transform = `translate(${x}px, ${y}px)`;
+      });
+      item.addEventListener('mouseleave', () => {
+        photo.style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>
