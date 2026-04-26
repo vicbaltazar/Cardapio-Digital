@@ -430,6 +430,7 @@ header {
 
 .starburst-soda svg path { fill: var(--soda-blob); }
 .starburst-bolo svg path { fill: var(--bolo-blob); }
+.starburst-misto svg path { fill: var(--misto-blob); }
 
 .starburst-text {
   position: relative;
